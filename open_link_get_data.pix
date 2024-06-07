@@ -94,7 +94,7 @@
           </PropertyValue>
         </PropertyValues>
         <SelectedOptionId>0</SelectedOptionId>
-        <EnableStatus>true</EnableStatus>
+        <EnableStatus>false</EnableStatus>
         <ExceptionHandlingMode>Skip</ExceptionHandlingMode>
         <RetryCount>-1</RetryCount>
         <Text></Text>
