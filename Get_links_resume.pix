@@ -684,27 +684,6 @@
         <Text></Text>
         <_activityFullName>Activities.Web.CloseBrowser</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i81" i:type="ExecutedStep">
-        <Childs />
-        <Id>b2f08e93-c4b7-4176-9ada-95143da2784d</Id>
-        <Parent z:Ref="i2" />
-        <PropertyValues>
-          <PropertyValue z:Id="i82">
-            <PropertyName>Browser</PropertyName>
-            <_dataType>Expression</_dataType>
-            <_expression>browser</_expression>
-            <_screenShotBase64 i:nil="true" />
-            <_value i:nil="true" />
-            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-          </PropertyValue>
-        </PropertyValues>
-        <SelectedOptionId>0</SelectedOptionId>
-        <EnableStatus>true</EnableStatus>
-        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-        <RetryCount>-1</RetryCount>
-        <Text></Text>
-        <_activityFullName>Activities.Web.ScrapingData</_activityFullName>
-      </AbstractStep>
     </Childs>
     <Id>9c7722b0-a6a4-4d02-b4fe-acdf02a5928e</Id>
     <Parent i:nil="true" />
@@ -719,7 +698,7 @@
   <Name>Get_links_resume.pix</Name>
   <Namespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <Params>
-    <Parameter z:Id="i83">
+    <Parameter z:Id="i81">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>DictConfig</Name>
