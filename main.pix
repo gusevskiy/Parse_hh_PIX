@@ -11,16 +11,10 @@
         <Parent z:Ref="i2" />
         <PropertyValues>
           <PropertyValue z:Id="i4">
-            <PropertyName>InitialItems</PropertyName>
-            <_dataType>Value</_dataType>
-            <_expression></_expression>
-            <_value i:nil="true" />
-            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-          </PropertyValue>
-          <PropertyValue z:Id="i5">
             <PropertyName>Dictionary</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>DictConfig</_expression>
+            <_screenShotBase64 i:nil="true" />
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
@@ -32,41 +26,36 @@
         <Text></Text>
         <_activityFullName>Activities.BaseCollections.Dictionary.CreateDictionary</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i6" i:type="ExecutedStep">
+      <AbstractStep z:Id="i5" i:type="ExecutedStep">
         <Childs />
         <Id>708365c9-fad8-4e3c-9089-502b941369a8</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i7">
+          <PropertyValue z:Id="i6">
             <PropertyName>FilePath</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>@"LoadConfig.pix"</_expression>
+            <_screenShotBase64 i:nil="true" />
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i8">
+          <PropertyValue z:Id="i7">
             <PropertyName>Parameters</PropertyName>
             <_dataType>Value</_dataType>
             <_expression i:nil="true" />
+            <_screenShotBase64 i:nil="true" />
             <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d7p1:ArrayOfArgumentItem">
-              <d7p1:ArgumentItem z:Id="i9">
+              <d7p1:ArgumentItem z:Id="i8">
                 <d7p1:ArgumentName>DictConfig</d7p1:ArgumentName>
                 <d7p1:Expression>DictConfig</d7p1:Expression>
                 <d7p1:Type>Dictionary&lt;System.String, System.Object&gt;</d7p1:Type>
               </d7p1:ArgumentItem>
-              <d7p1:ArgumentItem z:Id="i10">
+              <d7p1:ArgumentItem z:Id="i9">
                 <d7p1:ArgumentName>PathExcelConfig</d7p1:ArgumentName>
-                <d7p1:Expression>@"C:\robots\ParseHH\Config_hh.xlsx"</d7p1:Expression>
+                <d7p1:Expression>@"C:\DEV_PIX\ParseHH\Config_hh.xlsx"</d7p1:Expression>
                 <d7p1:Type>System.String</d7p1:Type>
               </d7p1:ArgumentItem>
             </_value>
-            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-          </PropertyValue>
-          <PropertyValue z:Id="i11">
-            <PropertyName>Timeout</PropertyName>
-            <_dataType>Value</_dataType>
-            <_expression i:nil="true" />
-            <_value xmlns:d7p1="http://www.w3.org/2001/XMLSchema" i:type="d7p1:int">0</_value>
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
         </PropertyValues>
@@ -77,36 +66,31 @@
         <Text>Задать путь к файлу Config.xlsx</Text>
         <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i12" i:type="ExecutedStep">
+      <AbstractStep z:Id="i10" i:type="ExecutedStep">
         <Childs />
         <Id>f91bdf3f-242e-4d41-9bf0-f71726f76289</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i13">
+          <PropertyValue z:Id="i11">
             <PropertyName>FilePath</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>@"Get_links_resume.pix"</_expression>
+            <_screenShotBase64 i:nil="true" />
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i14">
+          <PropertyValue z:Id="i12">
             <PropertyName>Parameters</PropertyName>
             <_dataType>Value</_dataType>
             <_expression i:nil="true" />
+            <_screenShotBase64 i:nil="true" />
             <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d7p1:ArrayOfArgumentItem">
-              <d7p1:ArgumentItem z:Id="i15">
+              <d7p1:ArgumentItem z:Id="i13">
                 <d7p1:ArgumentName>DictConfig</d7p1:ArgumentName>
                 <d7p1:Expression>DictConfig</d7p1:Expression>
                 <d7p1:Type>Dictionary&lt;System.String, System.Object&gt;</d7p1:Type>
               </d7p1:ArgumentItem>
             </_value>
-            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-          </PropertyValue>
-          <PropertyValue z:Id="i16">
-            <PropertyName>Timeout</PropertyName>
-            <_dataType>Value</_dataType>
-            <_expression i:nil="true" />
-            <_value xmlns:d7p1="http://www.w3.org/2001/XMLSchema" i:type="d7p1:int">0</_value>
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
         </PropertyValues>
@@ -117,36 +101,31 @@
         <Text></Text>
         <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i17" i:type="ExecutedStep">
+      <AbstractStep z:Id="i14" i:type="ExecutedStep">
         <Childs />
         <Id>f9fd4976-d603-44dc-9a85-25624803d57b</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i18">
+          <PropertyValue z:Id="i15">
             <PropertyName>FilePath</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>@"Get_data_resume_save_excel.pix"</_expression>
+            <_screenShotBase64 i:nil="true" />
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
-          <PropertyValue z:Id="i19">
+          <PropertyValue z:Id="i16">
             <PropertyName>Parameters</PropertyName>
             <_dataType>Value</_dataType>
             <_expression i:nil="true" />
+            <_screenShotBase64 i:nil="true" />
             <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d7p1:ArrayOfArgumentItem">
-              <d7p1:ArgumentItem z:Id="i20">
+              <d7p1:ArgumentItem z:Id="i17">
                 <d7p1:ArgumentName>DictConfig</d7p1:ArgumentName>
                 <d7p1:Expression>DictConfig</d7p1:Expression>
                 <d7p1:Type>Dictionary&lt;System.String, System.Object&gt;</d7p1:Type>
               </d7p1:ArgumentItem>
             </_value>
-            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-          </PropertyValue>
-          <PropertyValue z:Id="i21">
-            <PropertyName>Timeout</PropertyName>
-            <_dataType>Value</_dataType>
-            <_expression i:nil="true" />
-            <_value xmlns:d7p1="http://www.w3.org/2001/XMLSchema" i:type="d7p1:int">0</_value>
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
         </PropertyValues>
@@ -157,26 +136,11 @@
         <Text></Text>
         <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i22" i:type="ExecutedStep">
+      <AbstractStep z:Id="i18" i:type="ExecutedStep">
         <Childs />
         <Id>9d98e4f4-44b8-4515-afd0-7de8d388044c</Id>
         <Parent z:Ref="i2" />
-        <PropertyValues>
-          <PropertyValue z:Id="i23">
-            <PropertyName>Value</PropertyName>
-            <_dataType>Value</_dataType>
-            <_expression></_expression>
-            <_value i:nil="true" />
-            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-          </PropertyValue>
-          <PropertyValue z:Id="i24">
-            <PropertyName>To</PropertyName>
-            <_dataType>Expression</_dataType>
-            <_expression></_expression>
-            <_value i:nil="true" />
-            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-          </PropertyValue>
-        </PropertyValues>
+        <PropertyValues />
         <SelectedOptionId i:nil="true" />
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
