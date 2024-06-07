@@ -19,6 +19,10 @@
       <IsMain>false</IsMain>
       <Path>Get_data_resume_save_excel.pix</Path>
     </ProjectFileItem>
+    <ProjectFileItem z:Id="i6">
+      <IsMain>false</IsMain>
+      <Path>open_link_get_data.pix</Path>
+    </ProjectFileItem>
   </Files>
   <MasterUploadId>7</MasterUploadId>
   <Name>ParseHH</Name>
