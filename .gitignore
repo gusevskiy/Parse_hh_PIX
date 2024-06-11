@@ -531,6 +531,7 @@ FakesAssemblies/
 *.json
 *.xlsx
 *.ini
+*.png
 
 call_recording/
 Robot_log/

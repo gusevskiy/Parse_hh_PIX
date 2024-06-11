@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RobotizationProject xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/BR.Logic">
+  <Dependencies i:nil="true" />
+  <Description></Description>
+  <Files>
+    <ProjectFileItem z:Id="i2">
+      <IsMain>false</IsMain>
+      <Path>Data\Config.xlsx</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i3">
+      <IsMain>false</IsMain>
+      <Path>FrameworkScripts\InitAllSettings.pix</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i4">
+      <IsMain>false</IsMain>
+      <Path>FrameworkScripts\KillProcesses.pix</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i5">
+      <IsMain>false</IsMain>
+      <Path>FrameworkScripts\Notification.pix</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i6">
+      <IsMain>false</IsMain>
+      <Path>FrameworkScripts\TakeScreenshot.pix</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i7">
+      <IsMain>false</IsMain>
+      <Path>TransactionScripts\CreateTransactions.pix</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i8">
+      <IsMain>false</IsMain>
+      <Path>TransactionScripts\Finalize.pix</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i9">
+      <IsMain>false</IsMain>
+      <Path>TransactionScripts\PreProcess.pix</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i10">
+      <IsMain>false</IsMain>
+      <Path>TransactionScripts\Process.pix</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i11">
+      <IsMain>false</IsMain>
+      <Path>TransactionScripts\GetTransaction.pix</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i12">
+      <IsMain>true</IsMain>
+      <Path>Main.pix</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i13">
+      <IsMain>false</IsMain>
+      <Path>test.pix</Path>
+    </ProjectFileItem>
+  </Files>
+  <MasterUploadId i:nil="true" />
+  <Name>ReFramework_2.0</Name>
+  <ProjectMaterUploadIds i:nil="true" />
+  <Version xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">
+    <d2p1:_Build>-1</d2p1:_Build>
+    <d2p1:_Major>1</d2p1:_Major>
+    <d2p1:_Minor>0</d2p1:_Minor>
+    <d2p1:_Revision>-1</d2p1:_Revision>
+  </Version>
+</RobotizationProject>
