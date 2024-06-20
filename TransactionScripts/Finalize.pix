@@ -49,7 +49,7 @@
                   <PropertyValue z:Id="i9">
                     <PropertyName>Value</PropertyName>
                     <_dataType>Expression</_dataType>
-                    <_expression>$"Робот завершил работу. Скриншот результата во вложении. Результат сбора данных о кондидатах в таблице Results/TransactionsReport.xlsx"</_expression>
+                    <_expression>$"Робот завершил работу. Результат сбора данных о кондидатах в таблице TransactionsReport.xlsx, во вложении."</_expression>
                     <_screenShotBase64 i:nil="true" />
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
