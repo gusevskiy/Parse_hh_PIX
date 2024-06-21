@@ -111,7 +111,7 @@
                       </d11p1:ArgumentItem>
                       <d11p1:ArgumentItem z:Id="i18">
                         <d11p1:ArgumentName>bool_takeScreenshot</d11p1:ArgumentName>
-                        <d11p1:Expression>true</d11p1:Expression>
+                        <d11p1:Expression>false</d11p1:Expression>
                         <d11p1:Type>System.Boolean</d11p1:Type>
                       </d11p1:ArgumentItem>
                     </_value>

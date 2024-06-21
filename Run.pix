@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script xmlns:i="http://www.w3.org/2001/XMLSchema-instance" z:Id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" xmlns="http://schemas.datacontract.org/2004/07/BR.Logic">
+  <CompilationType>CSharp</CompilationType>
+  <Description>Новый скрипт без наполнения.</Description>
+  <Id>bbed5a54-af8b-46b4-9ee7-b9487667d496</Id>
+  <Logic z:Id="i2" i:type="ExecutedStep">
+    <Childs>
+      <AbstractStep z:Id="i3" i:type="ExecutedStep">
+        <Childs />
+        <Id>2edd486c-4dbd-4d12-8e75-4b307cc2c423</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i4">
+            <PropertyName>FilePath</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>@"Main.pix"</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+          <PropertyValue z:Id="i5">
+            <PropertyName>Parameters</PropertyName>
+            <_dataType>Value</_dataType>
+            <_expression i:nil="true" />
+            <_screenShotBase64 i:nil="true" />
+            <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d7p1:ArrayOfArgumentItem">
+              <d7p1:ArgumentItem z:Id="i6">
+                <d7p1:ArgumentName>int_transNumber</d7p1:ArgumentName>
+                <d7p1:Expression>0</d7p1:Expression>
+                <d7p1:Type>System.Int32</d7p1:Type>
+              </d7p1:ArgumentItem>
+              <d7p1:ArgumentItem z:Id="i7">
+                <d7p1:ArgumentName>bool_isProd</d7p1:ArgumentName>
+                <d7p1:Expression>false</d7p1:Expression>
+                <d7p1:Type>System.Boolean</d7p1:Type>
+              </d7p1:ArgumentItem>
+              <d7p1:ArgumentItem z:Id="i8">
+                <d7p1:ArgumentName>bool_isPredProd</d7p1:ArgumentName>
+                <d7p1:Expression>false</d7p1:Expression>
+                <d7p1:Type>System.Boolean</d7p1:Type>
+              </d7p1:ArgumentItem>
+              <d7p1:ArgumentItem z:Id="i9">
+                <d7p1:ArgumentName>int_maxTransactionRetry</d7p1:ArgumentName>
+                <d7p1:Expression>3</d7p1:Expression>
+                <d7p1:Type>System.Int32</d7p1:Type>
+              </d7p1:ArgumentItem>
+              <d7p1:ArgumentItem z:Id="i10">
+                <d7p1:ArgumentName>int_maxConsecutiveExceptions</d7p1:ArgumentName>
+                <d7p1:Expression>3</d7p1:Expression>
+                <d7p1:Type>System.Int32</d7p1:Type>
+              </d7p1:ArgumentItem>
+              <d7p1:ArgumentItem z:Id="i11">
+                <d7p1:ArgumentName>name_vacansy</d7p1:ArgumentName>
+                <d7p1:Expression>name_vacancy</d7p1:Expression>
+                <d7p1:Type>System.String</d7p1:Type>
+              </d7p1:ArgumentItem>
+              <d7p1:ArgumentItem z:Id="i12">
+                <d7p1:ArgumentName>period</d7p1:ArgumentName>
+                <d7p1:Expression>period</d7p1:Expression>
+                <d7p1:Type>System.Int32</d7p1:Type>
+              </d7p1:ArgumentItem>
+              <d7p1:ArgumentItem z:Id="i13">
+                <d7p1:ArgumentName>count_resume</d7p1:ArgumentName>
+                <d7p1:Expression>count_resume</d7p1:Expression>
+                <d7p1:Type>System.Int32</d7p1:Type>
+              </d7p1:ArgumentItem>
+            </_value>
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text></Text>
+        <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
+      </AbstractStep>
+    </Childs>
+    <Id>5d31a6a1-bc6f-4554-8d3e-8792d26c5092</Id>
+    <Parent i:nil="true" />
+    <PropertyValues />
+    <SelectedOptionId i:nil="true" />
+    <EnableStatus>true</EnableStatus>
+    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+    <RetryCount>-1</RetryCount>
+    <Text></Text>
+    <_activityFullName>BR.Core.Base.Container</_activityFullName>
+  </Logic>
+  <Name>Run.pix</Name>
+  <Namespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <Params>
+    <Parameter z:Id="i14">
+      <DefaultValueExpression>"Менеджер"</DefaultValueExpression>
+      <Description></Description>
+      <Name>name_vacancy</Name>
+      <RunnerType>None</RunnerType>
+      <TypeString>System.String</TypeString>
+    </Parameter>
+    <Parameter z:Id="i15">
+      <DefaultValueExpression>3</DefaultValueExpression>
+      <Description></Description>
+      <Name>period</Name>
+      <RunnerType>None</RunnerType>
+      <TypeString>System.Int32</TypeString>
+    </Parameter>
+    <Parameter z:Id="i16">
+      <DefaultValueExpression>2</DefaultValueExpression>
+      <Description></Description>
+      <Name>count_resume</Name>
+      <RunnerType>None</RunnerType>
+      <TypeString>System.Int32</TypeString>
+    </Parameter>
+  </Params>
+  <TemplateVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" i:nil="true" />
+  <Variables xmlns:d2p1="http://schemas.datacontract.org/2004/07/BR.Logic.Params" />
+  <Version i:nil="true" />
+</Script>

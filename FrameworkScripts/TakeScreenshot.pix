@@ -23,6 +23,7 @@
             <PropertyName>Value</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>$"{str_screenType}_{DateTime.Now.ToString("ddMMyyyy-HHmmss")}.png"</_expression>
+            <_screenShotBase64 i:nil="true" />
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
@@ -30,6 +31,7 @@
             <PropertyName>To</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>str_fileName</_expression>
+            <_screenShotBase64 i:nil="true" />
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
@@ -50,6 +52,7 @@
             <PropertyName>Value</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>Path.Combine($"{dict_config["ErrorScrFolder"]}", str_fileName)</_expression>
+            <_screenShotBase64 i:nil="true" />
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
@@ -57,6 +60,7 @@
             <PropertyName>To</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>str_screenPath</_expression>
+            <_screenShotBase64 i:nil="true" />
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
@@ -74,16 +78,10 @@
         <Parent z:Ref="i2" />
         <PropertyValues>
           <PropertyValue z:Id="i11">
-            <PropertyName>Element</PropertyName>
-            <_dataType>Value</_dataType>
-            <_expression i:nil="true" />
-            <_value xmlns:d7p1="http://www.w3.org/2001/XMLSchema" i:type="d7p1:string"></_value>
-            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-          </PropertyValue>
-          <PropertyValue z:Id="i12">
             <PropertyName>ImagePath</PropertyName>
             <_dataType>Expression</_dataType>
             <_expression>str_screenPath</_expression>
+            <_screenShotBase64 i:nil="true" />
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
@@ -109,25 +107,29 @@
   <Name>TakeScreenshot.pix</Name>
   <Namespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <Params>
-    <Parameter z:Id="i13">
+    <Parameter z:Id="i12">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>str_screenPath</Name>
+      <RunnerType>None</RunnerType>
       <TypeString>System.String</TypeString>
+    </Parameter>
+    <Parameter z:Id="i13">
+      <DefaultValueExpression></DefaultValueExpression>
+      <Description></Description>
+      <Name>dict_config</Name>
+      <RunnerType>None</RunnerType>
+      <TypeString>System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
     </Parameter>
     <Parameter z:Id="i14">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
-      <Name>dict_config</Name>
-      <TypeString>System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
-    </Parameter>
-    <Parameter z:Id="i15">
-      <DefaultValueExpression></DefaultValueExpression>
-      <Description></Description>
       <Name>str_screenType</Name>
+      <RunnerType>None</RunnerType>
       <TypeString>System.Object</TypeString>
     </Parameter>
   </Params>
+  <TemplateVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" i:nil="true" />
   <Variables xmlns:d2p1="http://schemas.datacontract.org/2004/07/BR.Logic.Params" />
   <Version i:nil="true" />
 </Script>
