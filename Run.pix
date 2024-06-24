@@ -6,74 +6,441 @@
   <Logic z:Id="i2" i:type="ExecutedStep">
     <Childs>
       <AbstractStep z:Id="i3" i:type="ExecutedStep">
-        <Childs />
-        <Id>2edd486c-4dbd-4d12-8e75-4b307cc2c423</Id>
+        <Childs>
+          <AbstractStep z:Id="i4" i:type="ExecutedStep">
+            <Childs>
+              <AbstractStep z:Id="i5" i:type="ExecutedStep">
+                <Childs>
+                  <AbstractStep z:Id="i6" i:type="ExecutedStep">
+                    <Childs>
+                      <AbstractStep z:Id="i7" i:type="ExecutedStep">
+                        <Childs />
+                        <Id>607936e9-4ffd-4bd5-b83c-6a49ef98fec4</Id>
+                        <Parent z:Ref="i6" />
+                        <PropertyValues>
+                          <PropertyValue z:Id="i8">
+                            <PropertyName>Text</PropertyName>
+                            <_dataType>Expression</_dataType>
+                            <_expression>"Не указана Вакансия!"</_expression>
+                            <_screenShotBase64 i:nil="true" />
+                            <_value i:nil="true" />
+                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                          </PropertyValue>
+                        </PropertyValues>
+                        <SelectedOptionId>0</SelectedOptionId>
+                        <EnableStatus>true</EnableStatus>
+                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                        <RetryCount>-1</RetryCount>
+                        <Text></Text>
+                        <_activityFullName>BR.Core.Base.ThrowException</_activityFullName>
+                      </AbstractStep>
+                    </Childs>
+                    <Id>8145988a-3c26-4c5f-8775-5c0ad75a6210</Id>
+                    <Parent z:Ref="i5" />
+                    <PropertyValues />
+                    <SelectedOptionId i:nil="true" />
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text></Text>
+                    <_activityFullName>BR.Core.Base.IfTrue</_activityFullName>
+                  </AbstractStep>
+                  <AbstractStep z:Id="i9" i:type="ExecutedStep">
+                    <Childs>
+                      <AbstractStep z:Id="i10" i:type="ExecutedStep">
+                        <Childs>
+                          <AbstractStep z:Id="i11" i:type="ExecutedStep">
+                            <Childs>
+                              <AbstractStep z:Id="i12" i:type="ExecutedStep">
+                                <Childs />
+                                <Id>d881d193-6d60-475b-aefa-f2e66ca151ad</Id>
+                                <Parent z:Ref="i11" />
+                                <PropertyValues>
+                                  <PropertyValue z:Id="i13">
+                                    <PropertyName>Text</PropertyName>
+                                    <_dataType>Expression</_dataType>
+                                    <_expression>"Не указан Email для отправки отчета"</_expression>
+                                    <_screenShotBase64 i:nil="true" />
+                                    <_value i:nil="true" />
+                                    <_xpathSettings xmlns:d19p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                                  </PropertyValue>
+                                </PropertyValues>
+                                <SelectedOptionId>0</SelectedOptionId>
+                                <EnableStatus>true</EnableStatus>
+                                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                                <RetryCount>-1</RetryCount>
+                                <Text></Text>
+                                <_activityFullName>BR.Core.Base.ThrowException</_activityFullName>
+                              </AbstractStep>
+                            </Childs>
+                            <Id>ae7ec6e9-c39a-4c78-bdd0-aba432665c69</Id>
+                            <Parent z:Ref="i10" />
+                            <PropertyValues />
+                            <SelectedOptionId i:nil="true" />
+                            <EnableStatus>true</EnableStatus>
+                            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                            <RetryCount>-1</RetryCount>
+                            <Text></Text>
+                            <_activityFullName>BR.Core.Base.IfTrue</_activityFullName>
+                          </AbstractStep>
+                          <AbstractStep z:Id="i14" i:type="ExecutedStep">
+                            <Childs>
+                              <AbstractStep z:Id="i15" i:type="ExecutedStep">
+                                <Childs />
+                                <Id>816af924-dd6a-4cb7-99cd-05eb9a09d66c</Id>
+                                <Parent z:Ref="i14" />
+                                <PropertyValues>
+                                  <PropertyValue z:Id="i16">
+                                    <PropertyName>Value</PropertyName>
+                                    <_dataType>Expression</_dataType>
+                                    <_expression>System.Text.RegularExpressions.Regex.IsMatch(your_mail, @"^[a-zA-Z0-9.!#$%&amp;'*+-/=?^_`{|}~]+@[a-zA-Z0-9-]+\.[a-zA-Z]{2,}$")</_expression>
+                                    <_screenShotBase64 i:nil="true" />
+                                    <_value i:nil="true" />
+                                    <_xpathSettings xmlns:d19p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                                  </PropertyValue>
+                                  <PropertyValue z:Id="i17">
+                                    <PropertyName>To</PropertyName>
+                                    <_dataType>Expression</_dataType>
+                                    <_expression>bool_mail</_expression>
+                                    <_screenShotBase64 i:nil="true" />
+                                    <_value i:nil="true" />
+                                    <_xpathSettings xmlns:d19p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                                  </PropertyValue>
+                                </PropertyValues>
+                                <SelectedOptionId i:nil="true" />
+                                <EnableStatus>true</EnableStatus>
+                                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                                <RetryCount>-1</RetryCount>
+                                <Text></Text>
+                                <_activityFullName>BR.Core.Base.Assign</_activityFullName>
+                              </AbstractStep>
+                              <AbstractStep z:Id="i18" i:type="ExecutedStep">
+                                <Childs>
+                                  <AbstractStep z:Id="i19" i:type="ExecutedStep">
+                                    <Childs>
+                                      <AbstractStep z:Id="i20" i:type="ExecutedStep">
+                                        <Childs />
+                                        <Id>f8876a76-cc40-4af2-bd88-b460e9fbb77d</Id>
+                                        <Parent z:Ref="i19" />
+                                        <PropertyValues>
+                                          <PropertyValue z:Id="i21">
+                                            <PropertyName>Text</PropertyName>
+                                            <_dataType>Expression</_dataType>
+                                            <_expression>"Запуск"</_expression>
+                                            <_screenShotBase64 i:nil="true" />
+                                            <_value i:nil="true" />
+                                            <_xpathSettings xmlns:d23p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                                          </PropertyValue>
+                                          <PropertyValue z:Id="i22">
+                                            <PropertyName>Title</PropertyName>
+                                            <_dataType>Expression</_dataType>
+                                            <_expression>"Оповещение"</_expression>
+                                            <_screenShotBase64 i:nil="true" />
+                                            <_value i:nil="true" />
+                                            <_xpathSettings xmlns:d23p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                                          </PropertyValue>
+                                          <PropertyValue z:Id="i23">
+                                            <PropertyName>Timeout</PropertyName>
+                                            <_dataType>Expression</_dataType>
+                                            <_expression>1</_expression>
+                                            <_screenShotBase64 i:nil="true" />
+                                            <_value i:nil="true" />
+                                            <_xpathSettings xmlns:d23p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                                          </PropertyValue>
+                                        </PropertyValues>
+                                        <SelectedOptionId i:nil="true" />
+                                        <EnableStatus>true</EnableStatus>
+                                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                                        <RetryCount>-1</RetryCount>
+                                        <Text></Text>
+                                        <_activityFullName>Activities.Interactive.MessageBox</_activityFullName>
+                                      </AbstractStep>
+                                      <AbstractStep z:Id="i24" i:type="ExecutedStep">
+                                        <Childs />
+                                        <Id>2edd486c-4dbd-4d12-8e75-4b307cc2c423</Id>
+                                        <Parent z:Ref="i19" />
+                                        <PropertyValues>
+                                          <PropertyValue z:Id="i25">
+                                            <PropertyName>FilePath</PropertyName>
+                                            <_dataType>Expression</_dataType>
+                                            <_expression>@"Main.pix"</_expression>
+                                            <_screenShotBase64 i:nil="true" />
+                                            <_value i:nil="true" />
+                                            <_xpathSettings xmlns:d23p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                                          </PropertyValue>
+                                          <PropertyValue z:Id="i26">
+                                            <PropertyName>Parameters</PropertyName>
+                                            <_dataType>Value</_dataType>
+                                            <_expression i:nil="true" />
+                                            <_screenShotBase64 i:nil="true" />
+                                            <_value xmlns:d23p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d23p1:ArrayOfArgumentItem">
+                                              <d23p1:ArgumentItem z:Id="i27">
+                                                <d23p1:ArgumentName>int_transNumber</d23p1:ArgumentName>
+                                                <d23p1:Expression>0</d23p1:Expression>
+                                                <d23p1:Type>System.Int32</d23p1:Type>
+                                              </d23p1:ArgumentItem>
+                                              <d23p1:ArgumentItem z:Id="i28">
+                                                <d23p1:ArgumentName>bool_isProd</d23p1:ArgumentName>
+                                                <d23p1:Expression>false</d23p1:Expression>
+                                                <d23p1:Type>System.Boolean</d23p1:Type>
+                                              </d23p1:ArgumentItem>
+                                              <d23p1:ArgumentItem z:Id="i29">
+                                                <d23p1:ArgumentName>bool_isPredProd</d23p1:ArgumentName>
+                                                <d23p1:Expression>false</d23p1:Expression>
+                                                <d23p1:Type>System.Boolean</d23p1:Type>
+                                              </d23p1:ArgumentItem>
+                                              <d23p1:ArgumentItem z:Id="i30">
+                                                <d23p1:ArgumentName>int_maxTransactionRetry</d23p1:ArgumentName>
+                                                <d23p1:Expression>3</d23p1:Expression>
+                                                <d23p1:Type>System.Int32</d23p1:Type>
+                                              </d23p1:ArgumentItem>
+                                              <d23p1:ArgumentItem z:Id="i31">
+                                                <d23p1:ArgumentName>int_maxConsecutiveExceptions</d23p1:ArgumentName>
+                                                <d23p1:Expression>3</d23p1:Expression>
+                                                <d23p1:Type>System.Int32</d23p1:Type>
+                                              </d23p1:ArgumentItem>
+                                              <d23p1:ArgumentItem z:Id="i32">
+                                                <d23p1:ArgumentName>name_vacansy</d23p1:ArgumentName>
+                                                <d23p1:Expression>name_vacancy</d23p1:Expression>
+                                                <d23p1:Type>System.String</d23p1:Type>
+                                              </d23p1:ArgumentItem>
+                                              <d23p1:ArgumentItem z:Id="i33">
+                                                <d23p1:ArgumentName>period</d23p1:ArgumentName>
+                                                <d23p1:Expression>period</d23p1:Expression>
+                                                <d23p1:Type>System.Int32</d23p1:Type>
+                                              </d23p1:ArgumentItem>
+                                              <d23p1:ArgumentItem z:Id="i34">
+                                                <d23p1:ArgumentName>count_resume</d23p1:ArgumentName>
+                                                <d23p1:Expression>count_resume</d23p1:Expression>
+                                                <d23p1:Type>System.Int32</d23p1:Type>
+                                              </d23p1:ArgumentItem>
+                                              <d23p1:ArgumentItem z:Id="i35">
+                                                <d23p1:ArgumentName>your_mail</d23p1:ArgumentName>
+                                                <d23p1:Expression>your_mail</d23p1:Expression>
+                                                <d23p1:Type>System.String</d23p1:Type>
+                                              </d23p1:ArgumentItem>
+                                            </_value>
+                                            <_xpathSettings xmlns:d23p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                                          </PropertyValue>
+                                        </PropertyValues>
+                                        <SelectedOptionId i:nil="true" />
+                                        <EnableStatus>false</EnableStatus>
+                                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                                        <RetryCount>-1</RetryCount>
+                                        <Text></Text>
+                                        <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
+                                      </AbstractStep>
+                                    </Childs>
+                                    <Id>502809e3-b51e-4918-88b1-a06b6ab476d1</Id>
+                                    <Parent z:Ref="i18" />
+                                    <PropertyValues />
+                                    <SelectedOptionId i:nil="true" />
+                                    <EnableStatus>true</EnableStatus>
+                                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                                    <RetryCount>-1</RetryCount>
+                                    <Text></Text>
+                                    <_activityFullName>BR.Core.Base.IfTrue</_activityFullName>
+                                  </AbstractStep>
+                                  <AbstractStep z:Id="i36" i:type="ExecutedStep">
+                                    <Childs>
+                                      <AbstractStep z:Id="i37" i:type="ExecutedStep">
+                                        <Childs />
+                                        <Id>47d9aa66-476d-4792-8509-61cb9666e830</Id>
+                                        <Parent z:Ref="i36" />
+                                        <PropertyValues>
+                                          <PropertyValue z:Id="i38">
+                                            <PropertyName>Text</PropertyName>
+                                            <_dataType>Expression</_dataType>
+                                            <_expression>"Адрес электронной почты имеет не верный формат!!!"</_expression>
+                                            <_screenShotBase64 i:nil="true" />
+                                            <_value i:nil="true" />
+                                            <_xpathSettings xmlns:d23p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                                          </PropertyValue>
+                                        </PropertyValues>
+                                        <SelectedOptionId>0</SelectedOptionId>
+                                        <EnableStatus>true</EnableStatus>
+                                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                                        <RetryCount>-1</RetryCount>
+                                        <Text></Text>
+                                        <_activityFullName>BR.Core.Base.ThrowException</_activityFullName>
+                                      </AbstractStep>
+                                    </Childs>
+                                    <Id>c7778abd-64de-4d4f-9e03-b29db9a1332f</Id>
+                                    <Parent z:Ref="i18" />
+                                    <PropertyValues />
+                                    <SelectedOptionId i:nil="true" />
+                                    <EnableStatus>true</EnableStatus>
+                                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                                    <RetryCount>-1</RetryCount>
+                                    <Text></Text>
+                                    <_activityFullName>BR.Core.Base.IfFalse</_activityFullName>
+                                  </AbstractStep>
+                                </Childs>
+                                <Id>71fc2d6e-ef13-453a-8bf1-6ac403b289ef</Id>
+                                <Parent z:Ref="i14" />
+                                <PropertyValues>
+                                  <PropertyValue z:Id="i39">
+                                    <PropertyName>Condition</PropertyName>
+                                    <_dataType>Expression</_dataType>
+                                    <_expression>bool_mail</_expression>
+                                    <_screenShotBase64 i:nil="true" />
+                                    <_value i:nil="true" />
+                                    <_xpathSettings xmlns:d19p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                                  </PropertyValue>
+                                </PropertyValues>
+                                <SelectedOptionId i:nil="true" />
+                                <EnableStatus>true</EnableStatus>
+                                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                                <RetryCount>-1</RetryCount>
+                                <Text></Text>
+                                <_activityFullName>BR.Core.Base.If</_activityFullName>
+                              </AbstractStep>
+                            </Childs>
+                            <Id>ee887cbc-304c-474b-8777-15c3607aa86c</Id>
+                            <Parent z:Ref="i10" />
+                            <PropertyValues />
+                            <SelectedOptionId i:nil="true" />
+                            <EnableStatus>true</EnableStatus>
+                            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                            <RetryCount>-1</RetryCount>
+                            <Text></Text>
+                            <_activityFullName>BR.Core.Base.IfFalse</_activityFullName>
+                          </AbstractStep>
+                        </Childs>
+                        <Id>251e5ba4-98d6-46fe-982b-30c934b521c6</Id>
+                        <Parent z:Ref="i9" />
+                        <PropertyValues>
+                          <PropertyValue z:Id="i40">
+                            <PropertyName>Condition</PropertyName>
+                            <_dataType>Expression</_dataType>
+                            <_expression>your_mail.Length == 0</_expression>
+                            <_screenShotBase64 i:nil="true" />
+                            <_value i:nil="true" />
+                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                          </PropertyValue>
+                        </PropertyValues>
+                        <SelectedOptionId i:nil="true" />
+                        <EnableStatus>true</EnableStatus>
+                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                        <RetryCount>-1</RetryCount>
+                        <Text></Text>
+                        <_activityFullName>BR.Core.Base.If</_activityFullName>
+                      </AbstractStep>
+                    </Childs>
+                    <Id>ddb11e33-4517-4136-b104-8dae6e4a089e</Id>
+                    <Parent z:Ref="i5" />
+                    <PropertyValues />
+                    <SelectedOptionId i:nil="true" />
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text></Text>
+                    <_activityFullName>BR.Core.Base.IfFalse</_activityFullName>
+                  </AbstractStep>
+                </Childs>
+                <Id>c13e0837-8a80-46ea-a185-19a54108b8fa</Id>
+                <Parent z:Ref="i4" />
+                <PropertyValues>
+                  <PropertyValue z:Id="i41">
+                    <PropertyName>Condition</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>name_vacancy.Length == 0</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                </PropertyValues>
+                <SelectedOptionId i:nil="true" />
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text></Text>
+                <_activityFullName>BR.Core.Base.If</_activityFullName>
+              </AbstractStep>
+            </Childs>
+            <Id>ab840b1f-6cf7-4699-8878-d861e43da3d0</Id>
+            <Parent z:Ref="i3" />
+            <PropertyValues />
+            <SelectedOptionId i:nil="true" />
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text></Text>
+            <_activityFullName>BR.Core.Base.Try</_activityFullName>
+          </AbstractStep>
+          <AbstractStep z:Id="i42" i:type="ExecutedStep">
+            <Childs>
+              <AbstractStep z:Id="i43" i:type="ExecutedStep">
+                <Childs />
+                <Id>d59d55c2-9835-4495-92c0-102345b452d9</Id>
+                <Parent z:Ref="i42" />
+                <PropertyValues>
+                  <PropertyValue z:Id="i44">
+                    <PropertyName>Text</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>message</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                  <PropertyValue z:Id="i45">
+                    <PropertyName>Title</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>"Произошла ошибка!"</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                </PropertyValues>
+                <SelectedOptionId i:nil="true" />
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text></Text>
+                <_activityFullName>Activities.Interactive.MessageBox</_activityFullName>
+              </AbstractStep>
+            </Childs>
+            <Id>ca857d52-664f-46f8-8495-ab0b0df81b75</Id>
+            <Parent z:Ref="i3" />
+            <PropertyValues>
+              <PropertyValue z:Id="i46">
+                <PropertyName>Message</PropertyName>
+                <_dataType>Expression</_dataType>
+                <_expression>message</_expression>
+                <_screenShotBase64 i:nil="true" />
+                <_value i:nil="true" />
+                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+              </PropertyValue>
+            </PropertyValues>
+            <SelectedOptionId i:nil="true" />
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text></Text>
+            <_activityFullName>BR.Core.Base.Catch</_activityFullName>
+          </AbstractStep>
+          <AbstractStep z:Id="i47" i:type="ExecutedStep">
+            <Childs />
+            <Id>ea04dd07-7fd1-4a4a-9615-673e7f52cf38</Id>
+            <Parent z:Ref="i3" />
+            <PropertyValues />
+            <SelectedOptionId i:nil="true" />
+            <EnableStatus>true</EnableStatus>
+            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+            <RetryCount>-1</RetryCount>
+            <Text></Text>
+            <_activityFullName>BR.Core.Base.Finally</_activityFullName>
+          </AbstractStep>
+        </Childs>
+        <Id>7d8e25f5-dff5-4785-ae16-fc9c1072d378</Id>
         <Parent z:Ref="i2" />
-        <PropertyValues>
-          <PropertyValue z:Id="i4">
-            <PropertyName>FilePath</PropertyName>
-            <_dataType>Expression</_dataType>
-            <_expression>@"Main.pix"</_expression>
-            <_screenShotBase64 i:nil="true" />
-            <_value i:nil="true" />
-            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-          </PropertyValue>
-          <PropertyValue z:Id="i5">
-            <PropertyName>Parameters</PropertyName>
-            <_dataType>Value</_dataType>
-            <_expression i:nil="true" />
-            <_screenShotBase64 i:nil="true" />
-            <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d7p1:ArrayOfArgumentItem">
-              <d7p1:ArgumentItem z:Id="i6">
-                <d7p1:ArgumentName>int_transNumber</d7p1:ArgumentName>
-                <d7p1:Expression>0</d7p1:Expression>
-                <d7p1:Type>System.Int32</d7p1:Type>
-              </d7p1:ArgumentItem>
-              <d7p1:ArgumentItem z:Id="i7">
-                <d7p1:ArgumentName>bool_isProd</d7p1:ArgumentName>
-                <d7p1:Expression>false</d7p1:Expression>
-                <d7p1:Type>System.Boolean</d7p1:Type>
-              </d7p1:ArgumentItem>
-              <d7p1:ArgumentItem z:Id="i8">
-                <d7p1:ArgumentName>bool_isPredProd</d7p1:ArgumentName>
-                <d7p1:Expression>false</d7p1:Expression>
-                <d7p1:Type>System.Boolean</d7p1:Type>
-              </d7p1:ArgumentItem>
-              <d7p1:ArgumentItem z:Id="i9">
-                <d7p1:ArgumentName>int_maxTransactionRetry</d7p1:ArgumentName>
-                <d7p1:Expression>3</d7p1:Expression>
-                <d7p1:Type>System.Int32</d7p1:Type>
-              </d7p1:ArgumentItem>
-              <d7p1:ArgumentItem z:Id="i10">
-                <d7p1:ArgumentName>int_maxConsecutiveExceptions</d7p1:ArgumentName>
-                <d7p1:Expression>3</d7p1:Expression>
-                <d7p1:Type>System.Int32</d7p1:Type>
-              </d7p1:ArgumentItem>
-              <d7p1:ArgumentItem z:Id="i11">
-                <d7p1:ArgumentName>name_vacansy</d7p1:ArgumentName>
-                <d7p1:Expression>name_vacancy</d7p1:Expression>
-                <d7p1:Type>System.String</d7p1:Type>
-              </d7p1:ArgumentItem>
-              <d7p1:ArgumentItem z:Id="i12">
-                <d7p1:ArgumentName>period</d7p1:ArgumentName>
-                <d7p1:Expression>period</d7p1:Expression>
-                <d7p1:Type>System.Int32</d7p1:Type>
-              </d7p1:ArgumentItem>
-              <d7p1:ArgumentItem z:Id="i13">
-                <d7p1:ArgumentName>count_resume</d7p1:ArgumentName>
-                <d7p1:Expression>count_resume</d7p1:Expression>
-                <d7p1:Type>System.Int32</d7p1:Type>
-              </d7p1:ArgumentItem>
-            </_value>
-            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-          </PropertyValue>
-        </PropertyValues>
+        <PropertyValues />
         <SelectedOptionId i:nil="true" />
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
         <RetryCount>-1</RetryCount>
-        <Text></Text>
-        <_activityFullName>BR.Core.Base.ExecuteScript</_activityFullName>
+        <Text>Проверка на наличие ввода данных.</Text>
+        <_activityFullName>BR.Core.Base.TryCatch</_activityFullName>
       </AbstractStep>
     </Childs>
     <Id>5d31a6a1-bc6f-4554-8d3e-8792d26c5092</Id>
@@ -89,26 +456,33 @@
   <Name>Run.pix</Name>
   <Namespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <Params>
-    <Parameter z:Id="i14">
-      <DefaultValueExpression>"Менеджер"</DefaultValueExpression>
+    <Parameter z:Id="i48">
+      <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>name_vacancy</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.String</TypeString>
     </Parameter>
-    <Parameter z:Id="i15">
+    <Parameter z:Id="i49">
       <DefaultValueExpression>3</DefaultValueExpression>
       <Description></Description>
       <Name>period</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.Int32</TypeString>
     </Parameter>
-    <Parameter z:Id="i16">
-      <DefaultValueExpression>2</DefaultValueExpression>
+    <Parameter z:Id="i50">
+      <DefaultValueExpression>5</DefaultValueExpression>
       <Description></Description>
       <Name>count_resume</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.Int32</TypeString>
+    </Parameter>
+    <Parameter z:Id="i51">
+      <DefaultValueExpression></DefaultValueExpression>
+      <Description></Description>
+      <Name>your_mail</Name>
+      <RunnerType>None</RunnerType>
+      <TypeString>System.String</TypeString>
     </Parameter>
   </Params>
   <TemplateVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" i:nil="true" />
