@@ -139,14 +139,6 @@
                                             <_value i:nil="true" />
                                             <_xpathSettings xmlns:d23p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                                           </PropertyValue>
-                                          <PropertyValue z:Id="i23">
-                                            <PropertyName>Timeout</PropertyName>
-                                            <_dataType>Expression</_dataType>
-                                            <_expression>1</_expression>
-                                            <_screenShotBase64 i:nil="true" />
-                                            <_value i:nil="true" />
-                                            <_xpathSettings xmlns:d23p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                                          </PropertyValue>
                                         </PropertyValues>
                                         <SelectedOptionId i:nil="true" />
                                         <EnableStatus>true</EnableStatus>
@@ -155,12 +147,12 @@
                                         <Text></Text>
                                         <_activityFullName>Activities.Interactive.MessageBox</_activityFullName>
                                       </AbstractStep>
-                                      <AbstractStep z:Id="i24" i:type="ExecutedStep">
+                                      <AbstractStep z:Id="i23" i:type="ExecutedStep">
                                         <Childs />
                                         <Id>2edd486c-4dbd-4d12-8e75-4b307cc2c423</Id>
                                         <Parent z:Ref="i19" />
                                         <PropertyValues>
-                                          <PropertyValue z:Id="i25">
+                                          <PropertyValue z:Id="i24">
                                             <PropertyName>FilePath</PropertyName>
                                             <_dataType>Expression</_dataType>
                                             <_expression>@"Main.pix"</_expression>
@@ -168,53 +160,53 @@
                                             <_value i:nil="true" />
                                             <_xpathSettings xmlns:d23p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                                           </PropertyValue>
-                                          <PropertyValue z:Id="i26">
+                                          <PropertyValue z:Id="i25">
                                             <PropertyName>Parameters</PropertyName>
                                             <_dataType>Value</_dataType>
                                             <_expression i:nil="true" />
                                             <_screenShotBase64 i:nil="true" />
                                             <_value xmlns:d23p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d23p1:ArrayOfArgumentItem">
-                                              <d23p1:ArgumentItem z:Id="i27">
+                                              <d23p1:ArgumentItem z:Id="i26">
                                                 <d23p1:ArgumentName>int_transNumber</d23p1:ArgumentName>
                                                 <d23p1:Expression>0</d23p1:Expression>
                                                 <d23p1:Type>System.Int32</d23p1:Type>
                                               </d23p1:ArgumentItem>
-                                              <d23p1:ArgumentItem z:Id="i28">
+                                              <d23p1:ArgumentItem z:Id="i27">
                                                 <d23p1:ArgumentName>bool_isProd</d23p1:ArgumentName>
                                                 <d23p1:Expression>false</d23p1:Expression>
                                                 <d23p1:Type>System.Boolean</d23p1:Type>
                                               </d23p1:ArgumentItem>
-                                              <d23p1:ArgumentItem z:Id="i29">
+                                              <d23p1:ArgumentItem z:Id="i28">
                                                 <d23p1:ArgumentName>bool_isPredProd</d23p1:ArgumentName>
                                                 <d23p1:Expression>false</d23p1:Expression>
                                                 <d23p1:Type>System.Boolean</d23p1:Type>
                                               </d23p1:ArgumentItem>
-                                              <d23p1:ArgumentItem z:Id="i30">
+                                              <d23p1:ArgumentItem z:Id="i29">
                                                 <d23p1:ArgumentName>int_maxTransactionRetry</d23p1:ArgumentName>
                                                 <d23p1:Expression>3</d23p1:Expression>
                                                 <d23p1:Type>System.Int32</d23p1:Type>
                                               </d23p1:ArgumentItem>
-                                              <d23p1:ArgumentItem z:Id="i31">
+                                              <d23p1:ArgumentItem z:Id="i30">
                                                 <d23p1:ArgumentName>int_maxConsecutiveExceptions</d23p1:ArgumentName>
                                                 <d23p1:Expression>3</d23p1:Expression>
                                                 <d23p1:Type>System.Int32</d23p1:Type>
                                               </d23p1:ArgumentItem>
-                                              <d23p1:ArgumentItem z:Id="i32">
+                                              <d23p1:ArgumentItem z:Id="i31">
                                                 <d23p1:ArgumentName>name_vacansy</d23p1:ArgumentName>
                                                 <d23p1:Expression>name_vacancy</d23p1:Expression>
                                                 <d23p1:Type>System.String</d23p1:Type>
                                               </d23p1:ArgumentItem>
-                                              <d23p1:ArgumentItem z:Id="i33">
+                                              <d23p1:ArgumentItem z:Id="i32">
                                                 <d23p1:ArgumentName>period</d23p1:ArgumentName>
                                                 <d23p1:Expression>period</d23p1:Expression>
                                                 <d23p1:Type>System.Int32</d23p1:Type>
                                               </d23p1:ArgumentItem>
-                                              <d23p1:ArgumentItem z:Id="i34">
+                                              <d23p1:ArgumentItem z:Id="i33">
                                                 <d23p1:ArgumentName>count_resume</d23p1:ArgumentName>
                                                 <d23p1:Expression>count_resume</d23p1:Expression>
                                                 <d23p1:Type>System.Int32</d23p1:Type>
                                               </d23p1:ArgumentItem>
-                                              <d23p1:ArgumentItem z:Id="i35">
+                                              <d23p1:ArgumentItem z:Id="i34">
                                                 <d23p1:ArgumentName>your_mail</d23p1:ArgumentName>
                                                 <d23p1:Expression>your_mail</d23p1:Expression>
                                                 <d23p1:Type>System.String</d23p1:Type>
@@ -224,7 +216,7 @@
                                           </PropertyValue>
                                         </PropertyValues>
                                         <SelectedOptionId i:nil="true" />
-                                        <EnableStatus>false</EnableStatus>
+                                        <EnableStatus>true</EnableStatus>
                                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                                         <RetryCount>-1</RetryCount>
                                         <Text></Text>
@@ -241,14 +233,14 @@
                                     <Text></Text>
                                     <_activityFullName>BR.Core.Base.IfTrue</_activityFullName>
                                   </AbstractStep>
-                                  <AbstractStep z:Id="i36" i:type="ExecutedStep">
+                                  <AbstractStep z:Id="i35" i:type="ExecutedStep">
                                     <Childs>
-                                      <AbstractStep z:Id="i37" i:type="ExecutedStep">
+                                      <AbstractStep z:Id="i36" i:type="ExecutedStep">
                                         <Childs />
                                         <Id>47d9aa66-476d-4792-8509-61cb9666e830</Id>
-                                        <Parent z:Ref="i36" />
+                                        <Parent z:Ref="i35" />
                                         <PropertyValues>
-                                          <PropertyValue z:Id="i38">
+                                          <PropertyValue z:Id="i37">
                                             <PropertyName>Text</PropertyName>
                                             <_dataType>Expression</_dataType>
                                             <_expression>"Адрес электронной почты имеет не верный формат!!!"</_expression>
@@ -279,7 +271,7 @@
                                 <Id>71fc2d6e-ef13-453a-8bf1-6ac403b289ef</Id>
                                 <Parent z:Ref="i14" />
                                 <PropertyValues>
-                                  <PropertyValue z:Id="i39">
+                                  <PropertyValue z:Id="i38">
                                     <PropertyName>Condition</PropertyName>
                                     <_dataType>Expression</_dataType>
                                     <_expression>bool_mail</_expression>
@@ -310,7 +302,7 @@
                         <Id>251e5ba4-98d6-46fe-982b-30c934b521c6</Id>
                         <Parent z:Ref="i9" />
                         <PropertyValues>
-                          <PropertyValue z:Id="i40">
+                          <PropertyValue z:Id="i39">
                             <PropertyName>Condition</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>your_mail.Length == 0</_expression>
@@ -341,7 +333,7 @@
                 <Id>c13e0837-8a80-46ea-a185-19a54108b8fa</Id>
                 <Parent z:Ref="i4" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i41">
+                  <PropertyValue z:Id="i40">
                     <PropertyName>Condition</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>name_vacancy.Length == 0</_expression>
@@ -368,14 +360,14 @@
             <Text></Text>
             <_activityFullName>BR.Core.Base.Try</_activityFullName>
           </AbstractStep>
-          <AbstractStep z:Id="i42" i:type="ExecutedStep">
+          <AbstractStep z:Id="i41" i:type="ExecutedStep">
             <Childs>
-              <AbstractStep z:Id="i43" i:type="ExecutedStep">
+              <AbstractStep z:Id="i42" i:type="ExecutedStep">
                 <Childs />
                 <Id>d59d55c2-9835-4495-92c0-102345b452d9</Id>
-                <Parent z:Ref="i42" />
+                <Parent z:Ref="i41" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i44">
+                  <PropertyValue z:Id="i43">
                     <PropertyName>Text</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>message</_expression>
@@ -383,7 +375,7 @@
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i45">
+                  <PropertyValue z:Id="i44">
                     <PropertyName>Title</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>"Произошла ошибка!"</_expression>
@@ -403,7 +395,7 @@
             <Id>ca857d52-664f-46f8-8495-ab0b0df81b75</Id>
             <Parent z:Ref="i3" />
             <PropertyValues>
-              <PropertyValue z:Id="i46">
+              <PropertyValue z:Id="i45">
                 <PropertyName>Message</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression>message</_expression>
@@ -419,7 +411,7 @@
             <Text></Text>
             <_activityFullName>BR.Core.Base.Catch</_activityFullName>
           </AbstractStep>
-          <AbstractStep z:Id="i47" i:type="ExecutedStep">
+          <AbstractStep z:Id="i46" i:type="ExecutedStep">
             <Childs />
             <Id>ea04dd07-7fd1-4a4a-9615-673e7f52cf38</Id>
             <Parent z:Ref="i3" />
@@ -456,28 +448,28 @@
   <Name>Run.pix</Name>
   <Namespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <Params>
-    <Parameter z:Id="i48">
+    <Parameter z:Id="i47">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>name_vacancy</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.String</TypeString>
     </Parameter>
-    <Parameter z:Id="i49">
-      <DefaultValueExpression>3</DefaultValueExpression>
+    <Parameter z:Id="i48">
+      <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>period</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.Int32</TypeString>
     </Parameter>
-    <Parameter z:Id="i50">
-      <DefaultValueExpression>5</DefaultValueExpression>
+    <Parameter z:Id="i49">
+      <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>count_resume</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.Int32</TypeString>
     </Parameter>
-    <Parameter z:Id="i51">
+    <Parameter z:Id="i50">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>your_mail</Name>

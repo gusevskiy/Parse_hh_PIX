@@ -51,6 +51,10 @@
       <IsMain>false</IsMain>
       <Path>Main.pix</Path>
     </ProjectFileItem>
+    <ProjectFileItem z:Id="i14">
+      <IsMain>false</IsMain>
+      <Path>test.pix</Path>
+    </ProjectFileItem>
   </Files>
   <MasterUploadId i:nil="true" />
   <Name>ReFramework_2.0</Name>
