@@ -53,16 +53,21 @@
     </ProjectFileItem>
     <ProjectFileItem z:Id="i14">
       <IsMain>false</IsMain>
-      <Path>test.pix</Path>
+      <Path>body.json</Path>
     </ProjectFileItem>
   </Files>
-  <MasterUploadId i:nil="true" />
+  <MasterUploadId>1</MasterUploadId>
   <Name>ReFramework_2.0</Name>
-  <ProjectMaterUploadIds i:nil="true" />
+  <ProjectMaterUploadIds>
+    <ProjectMaterUploadId>
+      <MasterUploadId>1</MasterUploadId>
+      <Url>https://srvnn.pix.ru</Url>
+    </ProjectMaterUploadId>
+  </ProjectMaterUploadIds>
   <Version xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">
     <d2p1:_Build>-1</d2p1:_Build>
     <d2p1:_Major>1</d2p1:_Major>
-    <d2p1:_Minor>0</d2p1:_Minor>
+    <d2p1:_Minor>18</d2p1:_Minor>
     <d2p1:_Revision>-1</d2p1:_Revision>
   </Version>
 </RobotizationProject>

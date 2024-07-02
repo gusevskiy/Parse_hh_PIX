@@ -2359,7 +2359,7 @@ Start yandex_gpt</Text>
                           <PropertyValue z:Id="i249">
                             <PropertyName>FilePath</PropertyName>
                             <_dataType>Expression</_dataType>
-                            <_expression>@"body.json"</_expression>
+                            <_expression>dict_config["json_file"].ToString()</_expression>
                             <_screenShotBase64 i:nil="true" />
                             <_value i:nil="true" />
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
