@@ -1099,7 +1099,7 @@
                   <PropertyValue z:Id="i107">
                     <PropertyName>Text</PropertyName>
                     <_dataType>Expression</_dataType>
-                    <_expression>$"Ссылка создана =&gt; {created_url}"</_expression>
+                    <_expression>$"Ссылка создана =&gt; {created_url.ToString()}"</_expression>
                     <_screenShotBase64 i:nil="true" />
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
@@ -1282,63 +1282,63 @@
   <Namespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <Params>
     <Parameter z:Id="i125">
-      <DefaultValueExpression>"Менеджер"</DefaultValueExpression>
+      <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>name_vacancy</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.String</TypeString>
     </Parameter>
     <Parameter z:Id="i126">
-      <DefaultValueExpression>3</DefaultValueExpression>
+      <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>period</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.Int32</TypeString>
     </Parameter>
     <Parameter z:Id="i127">
-      <DefaultValueExpression>3</DefaultValueExpression>
+      <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>count_resume</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.Int32</TypeString>
     </Parameter>
     <Parameter z:Id="i128">
-      <DefaultValueExpression>"vlgu12@mail.ru"</DefaultValueExpression>
+      <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>your_mail</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.String</TypeString>
     </Parameter>
     <Parameter z:Id="i129">
-      <DefaultValueExpression>"Нижний Новгород"</DefaultValueExpression>
+      <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>region</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.String</TypeString>
     </Parameter>
     <Parameter z:Id="i130">
-      <DefaultValueExpression>0</DefaultValueExpression>
+      <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>salary_from</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
     </Parameter>
     <Parameter z:Id="i131">
-      <DefaultValueExpression>100000</DefaultValueExpression>
+      <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>salary_to</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
     </Parameter>
     <Parameter z:Id="i132">
-      <DefaultValueExpression>1</DefaultValueExpression>
+      <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>experience_from</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
     </Parameter>
     <Parameter z:Id="i133">
-      <DefaultValueExpression>3</DefaultValueExpression>
+      <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>experience_to</Name>
       <RunnerType>None</RunnerType>

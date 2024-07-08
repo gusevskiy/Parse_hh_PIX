@@ -4030,7 +4030,7 @@ STATE 5: Завершение</Text>
     <Text></Text>
     <_activityFullName>BR.Core.Base.Container</_activityFullName>
   </Logic>
-  <Name>Main.pix</Name>
+  <Name>main.pix</Name>
   <Namespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
     <d2p1:string>System.Text.RegularExpressions</d2p1:string>
     <d2p1:string>Newtonsoft.Json</d2p1:string>
