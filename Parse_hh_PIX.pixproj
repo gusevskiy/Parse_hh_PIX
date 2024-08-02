@@ -5,63 +5,63 @@
   <Files>
     <ProjectFileItem z:Id="i2">
       <IsMain>false</IsMain>
-      <Path>main.pix</Path>
+      <Path>Data\Config.xlsx</Path>
     </ProjectFileItem>
     <ProjectFileItem z:Id="i3">
       <IsMain>false</IsMain>
-      <Path>Data\Config.xlsx</Path>
+      <Path>FrameworkScripts\InitAllSettings.pix</Path>
     </ProjectFileItem>
     <ProjectFileItem z:Id="i4">
       <IsMain>false</IsMain>
-      <Path>FrameworkScripts\InitAllSettings.pix</Path>
+      <Path>FrameworkScripts\KillProcesses.pix</Path>
     </ProjectFileItem>
     <ProjectFileItem z:Id="i5">
       <IsMain>false</IsMain>
-      <Path>FrameworkScripts\KillProcesses.pix</Path>
+      <Path>FrameworkScripts\Notification.pix</Path>
     </ProjectFileItem>
     <ProjectFileItem z:Id="i6">
       <IsMain>false</IsMain>
-      <Path>FrameworkScripts\Notification.pix</Path>
+      <Path>FrameworkScripts\TakeScreenshot.pix</Path>
     </ProjectFileItem>
     <ProjectFileItem z:Id="i7">
       <IsMain>false</IsMain>
-      <Path>FrameworkScripts\TakeScreenshot.pix</Path>
+      <Path>TransactionScripts\CreateTransactions.pix</Path>
     </ProjectFileItem>
     <ProjectFileItem z:Id="i8">
       <IsMain>false</IsMain>
-      <Path>TransactionScripts\CreateTransactions.pix</Path>
+      <Path>TransactionScripts\Finalize.pix</Path>
     </ProjectFileItem>
     <ProjectFileItem z:Id="i9">
       <IsMain>false</IsMain>
-      <Path>TransactionScripts\Finalize.pix</Path>
+      <Path>TransactionScripts\GetTransaction.pix</Path>
     </ProjectFileItem>
     <ProjectFileItem z:Id="i10">
       <IsMain>false</IsMain>
-      <Path>TransactionScripts\GetTransaction.pix</Path>
+      <Path>TransactionScripts\PreProcess.pix</Path>
     </ProjectFileItem>
     <ProjectFileItem z:Id="i11">
       <IsMain>false</IsMain>
-      <Path>TransactionScripts\PreProcess.pix</Path>
+      <Path>TransactionScripts\Process.pix</Path>
     </ProjectFileItem>
     <ProjectFileItem z:Id="i12">
       <IsMain>false</IsMain>
-      <Path>TransactionScripts\Process.pix</Path>
+      <Path>.gitignore</Path>
     </ProjectFileItem>
     <ProjectFileItem z:Id="i13">
       <IsMain>false</IsMain>
-      <Path>.gitignore</Path>
+      <Path>body.json</Path>
     </ProjectFileItem>
     <ProjectFileItem z:Id="i14">
       <IsMain>false</IsMain>
-      <Path>body.json</Path>
-    </ProjectFileItem>
-    <ProjectFileItem z:Id="i15">
-      <IsMain>false</IsMain>
       <Path>Readme.md</Path>
     </ProjectFileItem>
-    <ProjectFileItem z:Id="i16">
+    <ProjectFileItem z:Id="i15">
       <IsMain>true</IsMain>
       <Path>Run.pix</Path>
+    </ProjectFileItem>
+    <ProjectFileItem z:Id="i16">
+      <IsMain>false</IsMain>
+      <Path>Main.pix</Path>
     </ProjectFileItem>
   </Files>
   <MasterUploadId>23</MasterUploadId>
@@ -75,7 +75,7 @@
   <Version xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">
     <d2p1:_Build>-1</d2p1:_Build>
     <d2p1:_Major>1</d2p1:_Major>
-    <d2p1:_Minor>2</d2p1:_Minor>
+    <d2p1:_Minor>7</d2p1:_Minor>
     <d2p1:_Revision>-1</d2p1:_Revision>
   </Version>
 </RobotizationProject>

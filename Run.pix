@@ -837,7 +837,7 @@
                   <PropertyValue z:Id="i82">
                     <PropertyName>Condition</PropertyName>
                     <_dataType>Expression</_dataType>
-                    <_expression>salary_from is null || salary_to is null</_expression>
+                    <_expression>salary_from == 0 &amp;&amp; salary_to == 0</_expression>
                     <_screenShotBase64 i:nil="true" />
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
@@ -1001,6 +1001,27 @@
                                 <_activityFullName>BR.Core.Base.Assign</_activityFullName>
                               </AbstractStep>
                             </Childs>
+                            <Id>57d60d10-3a4a-4826-8e4a-5b5313beaeb1</Id>
+                            <Parent z:Ref="i92" />
+                            <PropertyValues>
+                              <PropertyValue z:Id="i101">
+                                <PropertyName>Condition</PropertyName>
+                                <_dataType>Expression</_dataType>
+                                <_expression>experience_from == 1 &amp;&amp; experience_to == 1</_expression>
+                                <_screenShotBase64 i:nil="true" />
+                                <_value i:nil="true" />
+                                <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                              </PropertyValue>
+                            </PropertyValues>
+                            <SelectedOptionId i:nil="true" />
+                            <EnableStatus>true</EnableStatus>
+                            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                            <RetryCount>-1</RetryCount>
+                            <Text></Text>
+                            <_activityFullName>BR.Core.Base.ElseIf</_activityFullName>
+                          </AbstractStep>
+                          <AbstractStep z:Id="i102" i:type="ExecutedStep">
+                            <Childs />
                             <Id>669a2440-87ab-4e6f-8ac1-9919fee32a6b</Id>
                             <Parent z:Ref="i92" />
                             <PropertyValues />
@@ -1015,7 +1036,7 @@
                         <Id>9ac8f096-2f09-44d6-8e45-f2af1e8b8679</Id>
                         <Parent z:Ref="i91" />
                         <PropertyValues>
-                          <PropertyValue z:Id="i101">
+                          <PropertyValue z:Id="i103">
                             <PropertyName>Condition</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>experience_from &lt; experience_to</_expression>
@@ -1046,10 +1067,10 @@
                 <Id>ba1f0f75-cde8-40d7-8f19-41a82bb66fe5</Id>
                 <Parent z:Ref="i4" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i102">
+                  <PropertyValue z:Id="i104">
                     <PropertyName>Condition</PropertyName>
                     <_dataType>Expression</_dataType>
-                    <_expression>experience_from is null &amp;&amp; experience_to is null</_expression>
+                    <_expression>experience_from == 0 &amp;&amp; experience_to == 0</_expression>
                     <_screenShotBase64 i:nil="true" />
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
@@ -1062,12 +1083,12 @@
                 <Text></Text>
                 <_activityFullName>BR.Core.Base.If</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i103" i:type="ExecutedStep">
+              <AbstractStep z:Id="i105" i:type="ExecutedStep">
                 <Childs />
                 <Id>107dab32-82cc-4d6f-9cc2-c833ced138ab</Id>
                 <Parent z:Ref="i4" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i104">
+                  <PropertyValue z:Id="i106">
                     <PropertyName>Value</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>$"https://nn.hh.ru/search/resume?text={add_vacancy}&amp;search_period={add_period}&amp;area={add_int_region}&amp;employment=full&amp;items_on_page=100&amp;job_search_status_changed_by_user=true&amp;logic=normal&amp;no_magic=true&amp;order_by=publication_time&amp;pos=full_text&amp;relocation=living&amp;filter_exp_period=all_time&amp;gender=unknown{add_experience}&amp;age_to=50{add_salary}"</_expression>
@@ -1075,7 +1096,7 @@
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i105">
+                  <PropertyValue z:Id="i107">
                     <PropertyName>To</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>created_url</_expression>
@@ -1091,12 +1112,12 @@
                 <Text></Text>
                 <_activityFullName>BR.Core.Base.Assign</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i106" i:type="ExecutedStep">
+              <AbstractStep z:Id="i108" i:type="ExecutedStep">
                 <Childs />
                 <Id>b9bd757a-25f7-4564-b144-8b62d7fb9723</Id>
                 <Parent z:Ref="i4" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i107">
+                  <PropertyValue z:Id="i109">
                     <PropertyName>Text</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>$"Ссылка создана =&gt; {created_url.ToString()}"</_expression>
@@ -1112,12 +1133,12 @@
                 <Text></Text>
                 <_activityFullName>BR.Core.Base.WriteLog</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i108" i:type="ExecutedStep">
+              <AbstractStep z:Id="i110" i:type="ExecutedStep">
                 <Childs />
                 <Id>6d8e8b76-e417-48b8-bae6-18d0e5707155</Id>
                 <Parent z:Ref="i4" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i109">
+                  <PropertyValue z:Id="i111">
                     <PropertyName>FilePath</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>@"Main.pix"</_expression>
@@ -1125,50 +1146,55 @@
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i110">
+                  <PropertyValue z:Id="i112">
                     <PropertyName>Parameters</PropertyName>
                     <_dataType>Value</_dataType>
                     <_expression i:nil="true" />
                     <_screenShotBase64 i:nil="true" />
                     <_value xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d11p1:ArrayOfArgumentItem">
-                      <d11p1:ArgumentItem z:Id="i111">
+                      <d11p1:ArgumentItem z:Id="i113">
                         <d11p1:ArgumentName>int_transNumber</d11p1:ArgumentName>
                         <d11p1:Expression>0</d11p1:Expression>
                         <d11p1:Type>System.Int32</d11p1:Type>
                       </d11p1:ArgumentItem>
-                      <d11p1:ArgumentItem z:Id="i112">
+                      <d11p1:ArgumentItem z:Id="i114">
                         <d11p1:ArgumentName>bool_isProd</d11p1:ArgumentName>
                         <d11p1:Expression>false</d11p1:Expression>
                         <d11p1:Type>System.Boolean</d11p1:Type>
                       </d11p1:ArgumentItem>
-                      <d11p1:ArgumentItem z:Id="i113">
+                      <d11p1:ArgumentItem z:Id="i115">
                         <d11p1:ArgumentName>bool_isPredProd</d11p1:ArgumentName>
                         <d11p1:Expression>false</d11p1:Expression>
                         <d11p1:Type>System.Boolean</d11p1:Type>
                       </d11p1:ArgumentItem>
-                      <d11p1:ArgumentItem z:Id="i114">
+                      <d11p1:ArgumentItem z:Id="i116">
                         <d11p1:ArgumentName>int_maxTransactionRetry</d11p1:ArgumentName>
                         <d11p1:Expression>3</d11p1:Expression>
                         <d11p1:Type>System.Int32</d11p1:Type>
                       </d11p1:ArgumentItem>
-                      <d11p1:ArgumentItem z:Id="i115">
+                      <d11p1:ArgumentItem z:Id="i117">
                         <d11p1:ArgumentName>int_maxConsecutiveExceptions</d11p1:ArgumentName>
                         <d11p1:Expression>3</d11p1:Expression>
                         <d11p1:Type>System.Int32</d11p1:Type>
                       </d11p1:ArgumentItem>
-                      <d11p1:ArgumentItem z:Id="i116">
+                      <d11p1:ArgumentItem z:Id="i118">
                         <d11p1:ArgumentName>count_resume</d11p1:ArgumentName>
                         <d11p1:Expression>count_resume</d11p1:Expression>
                         <d11p1:Type>System.Int32</d11p1:Type>
                       </d11p1:ArgumentItem>
-                      <d11p1:ArgumentItem z:Id="i117">
+                      <d11p1:ArgumentItem z:Id="i119">
                         <d11p1:ArgumentName>your_mail</d11p1:ArgumentName>
                         <d11p1:Expression>your_mail</d11p1:Expression>
                         <d11p1:Type>System.String</d11p1:Type>
                       </d11p1:ArgumentItem>
-                      <d11p1:ArgumentItem z:Id="i118">
+                      <d11p1:ArgumentItem z:Id="i120">
                         <d11p1:ArgumentName>created_url</d11p1:ArgumentName>
                         <d11p1:Expression>created_url</d11p1:Expression>
+                        <d11p1:Type>System.String</d11p1:Type>
+                      </d11p1:ArgumentItem>
+                      <d11p1:ArgumentItem z:Id="i121">
+                        <d11p1:ArgumentName>name_vacancy</d11p1:ArgumentName>
+                        <d11p1:Expression>name_vacancy</d11p1:Expression>
                         <d11p1:Type>System.String</d11p1:Type>
                       </d11p1:ArgumentItem>
                     </_value>
@@ -1193,14 +1219,14 @@
             <Text></Text>
             <_activityFullName>BR.Core.Base.Try</_activityFullName>
           </AbstractStep>
-          <AbstractStep z:Id="i119" i:type="ExecutedStep">
+          <AbstractStep z:Id="i122" i:type="ExecutedStep">
             <Childs>
-              <AbstractStep z:Id="i120" i:type="ExecutedStep">
+              <AbstractStep z:Id="i123" i:type="ExecutedStep">
                 <Childs />
                 <Id>e1646be3-5111-413b-981e-eb6521e9e3a1</Id>
-                <Parent z:Ref="i119" />
+                <Parent z:Ref="i122" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i121">
+                  <PropertyValue z:Id="i124">
                     <PropertyName>Level</PropertyName>
                     <_dataType>Value</_dataType>
                     <_expression i:nil="true" />
@@ -1208,7 +1234,7 @@
                     <_value xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.Core.Base" i:type="d11p1:LogLevel">Error</_value>
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i122">
+                  <PropertyValue z:Id="i125">
                     <PropertyName>Text</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>"Ошибка ввода данных"</_expression>
@@ -1228,7 +1254,7 @@
             <Id>2861c404-eb52-49d8-9a03-eed05d05727a</Id>
             <Parent z:Ref="i3" />
             <PropertyValues>
-              <PropertyValue z:Id="i123">
+              <PropertyValue z:Id="i126">
                 <PropertyName>Message</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression>message</_expression>
@@ -1244,7 +1270,7 @@
             <Text></Text>
             <_activityFullName>BR.Core.Base.Catch</_activityFullName>
           </AbstractStep>
-          <AbstractStep z:Id="i124" i:type="ExecutedStep">
+          <AbstractStep z:Id="i127" i:type="ExecutedStep">
             <Childs />
             <Id>549dc91e-d123-4b38-8f79-35792cad20f4</Id>
             <Parent z:Ref="i3" />
@@ -1281,68 +1307,68 @@
   <Name>Run.pix</Name>
   <Namespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <Params>
-    <Parameter z:Id="i125">
+    <Parameter z:Id="i128">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>name_vacancy</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.String</TypeString>
     </Parameter>
-    <Parameter z:Id="i126">
+    <Parameter z:Id="i129">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>period</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.Int32</TypeString>
     </Parameter>
-    <Parameter z:Id="i127">
+    <Parameter z:Id="i130">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>count_resume</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.Int32</TypeString>
     </Parameter>
-    <Parameter z:Id="i128">
+    <Parameter z:Id="i131">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>your_mail</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.String</TypeString>
     </Parameter>
-    <Parameter z:Id="i129">
+    <Parameter z:Id="i132">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>region</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.String</TypeString>
     </Parameter>
-    <Parameter z:Id="i130">
+    <Parameter z:Id="i133">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>salary_from</Name>
       <RunnerType>None</RunnerType>
-      <TypeString>System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
+      <TypeString>System.Int32</TypeString>
     </Parameter>
-    <Parameter z:Id="i131">
+    <Parameter z:Id="i134">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>salary_to</Name>
       <RunnerType>None</RunnerType>
-      <TypeString>System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
+      <TypeString>System.Int32</TypeString>
     </Parameter>
-    <Parameter z:Id="i132">
+    <Parameter z:Id="i135">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>experience_from</Name>
       <RunnerType>None</RunnerType>
-      <TypeString>System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
+      <TypeString>System.Int32</TypeString>
     </Parameter>
-    <Parameter z:Id="i133">
+    <Parameter z:Id="i136">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>experience_to</Name>
       <RunnerType>None</RunnerType>
-      <TypeString>System.Nullable`1[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
+      <TypeString>System.Int32</TypeString>
     </Parameter>
   </Params>
   <TemplateVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" i:nil="true" />
