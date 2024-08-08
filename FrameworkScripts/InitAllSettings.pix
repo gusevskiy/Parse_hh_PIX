@@ -456,7 +456,7 @@
                   </PropertyValue>
                 </PropertyValues>
                 <SelectedOptionId i:nil="true" />
-                <EnableStatus>false</EnableStatus>
+                <EnableStatus>true</EnableStatus>
                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                 <RetryCount>-1</RetryCount>
                 <Text>путь к json file</Text>
